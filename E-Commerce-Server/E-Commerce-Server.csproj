@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Commerce_Server</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\wwwroot\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Properties\wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <Content Include="Properties\wwwroot\css\open-iconic\FONT-LICENSE" />
+    <Content Include="Properties\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+    <Content Include="Properties\wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+    <Content Include="Properties\wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+    <Content Include="Properties\wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+    <Content Include="Properties\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+    <Content Include="Properties\wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+    <Content Include="Properties\wwwroot\css\open-iconic\ICON-LICENSE" />
+    <Content Include="Properties\wwwroot\css\open-iconic\README.md" />
+    <Content Include="Properties\wwwroot\css\site.css" />
+    <Content Include="Properties\wwwroot\favicon.png" />
+    <Content Include="Properties\wwwroot\images\book.gif" />
+    <Content Include="Properties\wwwroot\images\default.jpg" />
+    <Content Include="Properties\wwwroot\images\product\54881da1-9c28-4726-8057-cf627ecea3ec.jpeg" />
+    <Content Include="Properties\wwwroot\images\product\88c19238-991d-4ad3-9434-f260d4503bb2.jpeg" />
+    <Content Include="Properties\wwwroot\images\product\b3dbfc05-a26d-4bb6-9f9c-937203969cbb.jpeg" />
+    <Content Include="Properties\wwwroot\js\common.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="19.3.0.59" />
+    <PackageReference Include="Syncfusion.Blazor.RichTextEditor" Version="19.3.0.59" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="19.3.0.59" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E-Commerce-Business\E-Commerce-Business.csproj" />
+    <ProjectReference Include="..\E-Commerce-DataAccess\E-Commerce-DataAccess.csproj" />
+    <ProjectReference Include="..\E-Commerce-Models\E-Commerce-Models.csproj" />
+  </ItemGroup>
+
+</Project>
